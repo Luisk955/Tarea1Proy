@@ -1,4 +1,5 @@
 document.querySelector('#btnAddFriend').addEventListener('click', addFriend);
+document.querySelector('#btnAddPet').addEventListener('click', addPet);
 
 function addFriend(){
 	var sName = document.querySelector('#txtName').value,
@@ -40,4 +41,26 @@ function fillFriendsTable(){
 		tbody.appendChild(row);
 	}	
 }
+function addPet(){
+	var sID = document.querySelector('#txtPetID').value,
+		sName = document.querySelector('#txtPetName').value,
+		sType = document.querySelector('#txtPetType').value,
+		sOwnerID = document.querySelector('#friendsTable tbody input[type=radio]:checked').value;
+	var friendObj = findFriend(sOwnerID);
 
+	addPetToFriend(friendObj, sID, sName, sType);
+}
+function fillPetsTable(){
+	var list = getFriendsList(),
+		tbody = document.querySelector('#petsTable tbody');
+
+	tbody.innerHTML = '';
+
+	for(var i=0; i< list.length; i++){
+		var row = tbody.insertRow[i];
+		var ownerCell = list[i].name,
+			idCell =,
+			nameCell =,
+			typeCell =;
+	}
+}
