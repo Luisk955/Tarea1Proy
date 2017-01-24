@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 1</title>
+</head>
+<body>
+	<div class="container">
+		<form class="form-inline">
+	 		<legend>Friend Registration Form</legend>
+	 		<!--<div class="form-group">
+	    		<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+	  		</div>-->
+	 		<div class="form-group">
+	    		<input type="text" class="form-control" id="txtName" placeholder="Full Name">
+	  		</div>
+	  		<div class="form-group">
+	    		<input type="text" class="form-control" id="txtCountry" placeholder="Country">
+	  		</div>
+	  		<div class="form-group">
+	    		<input type="date" class="form-control" id="txtBirthday" placeholder="Birthday">
+	  		</div>
+	  		<div class="form-group">
+	    		<input type="email" class="form-control" id="txtEmail" placeholder="Email">
+	  		</div>
+	  		<div class="form-group">
+	    		<input type="text" class="form-control" id="txtPhone" placeholder="Phone">
+	  		</div>
+			<button type="button" class="btn btn-default" id="btnAddFriend">Add Friend</button>
+		</form>
+	</div>
+	<div class="container">
+		<table id="friendsTable" class="table table-striped">
+		  <thead>
+		  	<tr>
+		  		<th>Name</th>
+		  		<th>Country</th>
+		  		<th>Birthday</th>
+		  		<th>Email</th>
+		  		<th>Phone</th>
+		  		<th>Select</th>
+		  	</tr>
+		  </thead>
+		  <tbody>
+		  </tbody>
+		</table>
+	</div>
+	<div class="container">
+		<form class="form-inline">
+			<legend>Pet Registration Form</legend>
+			<input type="text" class="form-control" id="txtID" placeholder="ID">
+			<input type="text" class="form-control" id="txtPetName" placeholder="Name">
+			<input type="text" class="form-control" id="txtPetType" placeholder="Type">
+			<button type="button" class="btn btn-default" id="btnAddPet">Add Pet</button>
+		</form>
+	</div>
+	<div class="container">
+		<table class="table table-striped" id="petsTable">
+			<thead>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Type</th>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+
+
+	<script type="text/javascript" src="js/logicUI.js"></script>
+	<script type="text/javascript" src="js/businessLogic.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
