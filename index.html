@@ -4,6 +4,7 @@
 	<title>Tarea 1</title>
 </head>
 <body>
+	<!-- friends form -->
 	<div class="container">
 		<form class="form-inline">
 	 		<legend>Friend Registration Form</legend>
@@ -25,10 +26,18 @@
 	  		<div class="form-group">
 	    		<input type="text" class="form-control" id="txtPhone" placeholder="Phone">
 	  		</div>
+	  		<div class="form-group">
+	    		<input type="text" class="form-control" id="txtPhoneType" placeholder="Phone Type">
+	  		</div>
+	  		<div class="form-group">
+	    		<input type="text" class="form-control" id="txtHobbie" placeholder="Hobbie" >
+	  		</div>
 			<button type="button" class="btn btn-default" id="btnAddFriend">Add Friend</button>
 		</form>
 	</div>
+	<!-- friends table -->
 	<div class="container">
+		<div class="col-md-6">
 		<table id="friendsTable" class="table table-striped">
 		  <thead>
 		  	<tr>
@@ -38,12 +47,31 @@
 		  		<th>Email</th>
 		  		<th>Phone</th>
 		  		<th>Select</th>
+		  		<th>Hobbies</th>
 		  	</tr>
 		  </thead>
 		  <tbody>
 		  </tbody>
 		</table>
+		</div>
+		<div class="col-md-6">
+		<table id="tblPhones" class="table table-striped hidden">
+			<thead>
+				<tr>
+					<th>Number</th>
+					<th>Type</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		</div>
+		<div class="col-md-6">
+			<ul id="hobbiesList" class="hidden">
+				<legend>Hobbies</legend>
+			</ul>
+		</div>
 	</div>
+	<!-- pets form -->
 	<div class="container">
 		<form class="form-inline">
 			<legend>Pet Registration Form</legend>
@@ -53,9 +81,11 @@
 			<button type="button" class="btn btn-default" id="btnAddPet">Add Pet</button>
 		</form>
 	</div>
+	<!-- pets table -->
 	<div class="container">
 		<table class="table table-striped" id="petsTable">
 			<thead>
+				<th>Owner</th>
 				<th>ID</th>
 				<th>Name</th>
 				<th>Type</th>

@@ -1,13 +1,14 @@
 var friendList = [];
 
-function createFriend(pName, pCountry, pBirthday, pEmail, pPhone){
+function createFriend(pName, pCountry, pBirthday, pEmail, pPhone, pHobbie){
 	var newFriend = {
 		name: pName,
 		country: pCountry,
 		birthday: pBirthday,
 		email: pEmail,
 		phone: pPhone,
-		pet: {}
+		hobbie: pHobbie,
+		pet: null
 	};
 	console.log(newFriend);
 	friendList.push(newFriend);
